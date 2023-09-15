@@ -1,6 +1,6 @@
 import { Elysia } from "elysia";
-import { UserService } from "../src/user/user.serivce";
-import { RequestType } from "../utils/req.type";
+import { UserService } from "../user/user.serivce";
+import { RequestType } from "../../utils/req.type";
 
 export const currentAuth = (app: Elysia) =>
   app.derive(async ({ jwt, set, bearer }: RequestType) => {

@@ -1,5 +1,5 @@
 import { t } from "elysia";
-import { isJWTAuthenticated } from "../../middleware/jwt";
+import { isJWTAuthenticated } from "../middleware/jwt";
 import { RequestType } from "../../utils/req.type";
 
 const authTag = "auth";
