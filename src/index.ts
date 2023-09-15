@@ -7,13 +7,13 @@ import { cookie } from "@elysiajs/cookie";
 
 import { UserRouter } from "./user/user.route";
 import { AuthRouter } from "./auth/auth.route";
-import { currentAuth } from "../middleware/auth";
+import { currentAuth } from "./middleware/auth";
 
-const port = Bun.env.PORT || 8000;
+const port = Bun.env.PORT || 3000;
 const app = new Elysia();
 
 await mongoose.connect(
-  Bun.env.MONGO_URI || "mongodb://localhost:27017/elysia-template-db"
+  Bun.env.MONGO_URI || "mongodb://mongo:27017/elysia-template-db"
 );
 
 app.use(

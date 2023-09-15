@@ -1,5 +1,5 @@
-import { UserService } from "../src/user/user.serivce";
-import { RequestType } from "../utils/req.type";
+import { UserService } from "../user/user.serivce";
+import { RequestType } from "../../utils/req.type";
 export const isJWTAuthenticated = async (req: RequestType) => {
   const { set, bearer, jwt } = req;
   if (!bearer) {
